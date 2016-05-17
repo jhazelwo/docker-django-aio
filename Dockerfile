@@ -31,5 +31,9 @@ RUN chown -vR 33:33 /app/*
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY init.sh /root/init.sh
 
+COPY during_build.sh /root/during_build.sh
+RUN /root/during_build.sh
+
 EXPOSE 80
 ENTRYPOINT /root/init.sh
+
