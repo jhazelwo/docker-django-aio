@@ -1,4 +1,4 @@
 # Django All-In-One, a Docker container for disposable web apps.
 
-* Tweak init.sh to your specs, then ./Build.sh.
+* Tweak during_build.sh and init.sh to your specs, then ./Build.sh.
 
